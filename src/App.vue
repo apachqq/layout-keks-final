@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Кваст</title>
-</head>
-
-<body>
+<template>
     <header class="page-header" id="top">
         <div class="container">
-            <nav class="main-nav"><a href="#top"><img src="./img/logo.png" alt="Квас «Кваст» логотип" width="140"
-                        height="76" /></a>
+            <nav class="main-nav"><a href="#top"><img src="img/logo.png" alt="Квас «Кваст» логотип" width="140"
+                                                      height="76"/></a>
                 <ul class="site-list">
                     <li><a class="site-list__link" href="#history">История</a></li>
                     <li><a class="site-list__link" href="#advantages">Производство</a></li>
@@ -41,8 +31,9 @@
                             </tr>
                         </table>
                         <p class="kvast__consist">Ржаной хлеб, Вода, Солод, Соль</p>
-                    </div><img class="kvast__pic" src="./img/bottle-left.jpg" alt="Кваст «Вахтёр»" wigth="319"
-                        height="459" />
+                    </div>
+                    <img class="kvast__pic" src="img/bottle-left.jpg" alt="Кваст «Вахтёр»" wigth="319"
+                         height="459"/>
                     <p class="kvast__description">Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и
                         придаст сил для вечерних приключений!</p>
                     <p class="kvast__action"><a class="button button--ghost" href="#">Подробнее</a> <a
@@ -62,8 +53,9 @@
                             </tr>
                         </table>
                         <p class="kvast__consist">Ячменный хлеб, Вода, Солод, Апельсин</p>
-                    </div><img class="kvast__pic" src="./img/bottle-right.jpg" alt="Кваст «Романтик»" wigth="319"
-                        height="459" />
+                    </div>
+                    <img class="kvast__pic" src="img/bottle-right.jpg" alt="Кваст «Романтик»" wigth="319"
+                         height="459"/>
                     <p class="kvast__description">Лёгкий и освежающий напиток поможет сохранять отличное настроение в
                         течение всего дня.</p>
                     <p class="kvast__action"><a class="button button--ghost" href="#">Подробнее</a> <a
@@ -105,9 +97,9 @@
                 <div class="history__wrapper">
                     <dt class="history__columns"><span class="history__subtitle">Происхождение кваса </span><i
                             class="history__source">Источник: <a href="https://ru.wikipedia.org/wiki/Квас#История"
-                                target="_blank">ru.wikipedia.org</a></i></dt>
+                                                                 target="_blank">ru.wikipedia.org</a></i></dt>
                     <dd class="history__columns"><img class="history__pic" src="img/wiki-1.png" alt="Картинка с квасом"
-                            width="200" height="101" />
+                                                      width="200" height="101"/>
                         <p class="history__text">Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет
                             древнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии,
                             Словакии и многих других странах, но называется он везде одинаково — квас.</p>
@@ -116,9 +108,9 @@
                 <div class="history__wrapper">
                     <dt class="history__columns"><span class="history__subtitle">Классификация кваса </span><i
                             class="history__source">Источник: <a href="https://ru.wikipedia.org/wiki/Квас#Классификация"
-                                target="_blank">ru.wikipedia.org</a></i></dt>
+                                                                 target="_blank">ru.wikipedia.org</a></i></dt>
                     <dd class="history__columns"><img class="history__pic" src="img/wiki-2.png" alt="Картинка с квасом"
-                            width="200" height="101" />
+                                                      width="200" height="101"/>
                         <p class="history__text">По российскому ГОСТу для промышленного изготовления — это напиток с
                             объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого
                             спиртового и молочнокислого брожения сусла.</p>
@@ -135,7 +127,7 @@
                     кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего
                     напитка!</p>
                 <cite class="review__source">Газета столичный Стольник </cite><a class="button button--ghost-grey"
-                    href="#">Читать далее</a>
+                                                                                 href="#">Читать далее</a>
             </blockquote>
         </div>
     </section>
@@ -144,45 +136,45 @@
             <h2 class="assortment__title title">Ассортимент</h2>
             <table class="items-list">
                 <thead>
-                    <tr>
-                        <th scope="col">Название</th>
-                        <th scope="col">Алк.</th>
-                        <th scope="col">Ккал</th>
-                        <th scope="col">Объём</th>
-                        <th scope="col">Стоимость</th>
-                    </tr>
+                <tr>
+                    <th scope="col">Название</th>
+                    <th scope="col">Алк.</th>
+                    <th scope="col">Ккал</th>
+                    <th scope="col">Объём</th>
+                    <th scope="col">Стоимость</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="assortment__name" scope="row">Классика</td>
-                        <td>&lt; 1,2%</td>
-                        <td>33</td>
-                        <td>330 мл</td>
-                        <td>120 Р.</td>
-                    </tr>
-                    <tr>
-                        <td class="assortment__name" scope="row">Шабаш</td>
-                        <td>&gt; 1,2%</td>
-                        <td>45</td>
-                        <td>330 мл</td>
-                        <td>250 Р.</td>
-                    </tr>
-                    <tr class="assortment--new">
-                        <td class="assortment__name" scope="row">Вахтёр <sup class="assortment__new-tag">Новинка</sup>
-                        </td>
-                        <td>&lt; 1%</td>
-                        <td>35</td>
-                        <td>0,5 л</td>
-                        <td>150 Р.</td>
-                    </tr>
-                    <tr class="assortment--new">
-                        <td class="assortment__name" scope="row">Романтик <sup class="assortment__new-tag">Новинка</sup>
-                        </td>
-                        <td>&lt; 0,5%</td>
-                        <td>27</td>
-                        <td>0,5 л</td>
-                        <td>90 Р.</td>
-                    </tr>
+                <tr>
+                    <td class="assortment__name" scope="row">Классика</td>
+                    <td>&lt; 1,2%</td>
+                    <td>33</td>
+                    <td>330 мл</td>
+                    <td>120 Р.</td>
+                </tr>
+                <tr>
+                    <td class="assortment__name" scope="row">Шабаш</td>
+                    <td>&gt; 1,2%</td>
+                    <td>45</td>
+                    <td>330 мл</td>
+                    <td>250 Р.</td>
+                </tr>
+                <tr class="assortment--new">
+                    <td class="assortment__name" scope="row">Вахтёр <sup class="assortment__new-tag">Новинка</sup>
+                    </td>
+                    <td>&lt; 1%</td>
+                    <td>35</td>
+                    <td>0,5 л</td>
+                    <td>150 Р.</td>
+                </tr>
+                <tr class="assortment--new">
+                    <td class="assortment__name" scope="row">Романтик <sup class="assortment__new-tag">Новинка</sup>
+                    </td>
+                    <td>&lt; 0,5%</td>
+                    <td>27</td>
+                    <td>0,5 л</td>
+                    <td>90 Р.</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -195,26 +187,26 @@
             <form class="order__form" action="" method="get">
                 <div class="order__wrapper">
                     <label>Представьтесь:
-                        <input type="text" />
+                        <input type="text"/>
                     </label>
                 </div>
                 <div class="order__wrapper order__phone">
                     <label>Номер телефона:
-                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
                     </label>
                 </div>
                 <div class="order__wrapper order__phone">
                     <label>Доп. номер:
-                        <input type="tel" name="phone-ext" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                        <input type="tel" name="phone-ext" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
                     </label>
                 </div>
                 <div class="order__wrapper">
                     <label>Email:
-                        <input type="email" name="email" />
+                        <input type="email" name="email"/>
                     </label>
                 </div>
                 <div class="order__wrapper">
-                    <label>Объём заказа: <br />
+                    <label>Объём заказа: <br/>
                         <select id="value" name="value">
                             <option value="1">От 5 до 10 баррелей в неделю</option>
                         </select>
@@ -227,7 +219,7 @@
                 </div>
                 <div class="order__wrapper">
                     <label class="order__newsletter">
-                        <input class="visually-hidden" type="checkbox" checked="checked" /><span
+                        <input class="visually-hidden" type="checkbox" checked="checked"/><span
                             class="custom-checkbox"></span> Я согласен получать квасную рассылку
                     </label>
                 </div>
@@ -238,7 +230,8 @@
     <footer class="footer" id="bottom">
         <div class="container container--wide">
             <div class="footer__wrapper"><a class="footer__logo" href="#bottom"><img src="img/logo.png"
-                        alt="Footer logo" width="140" height="76" /></a>
+                                                                                     alt="Footer logo" width="140"
+                                                                                     height="76"/></a>
                 <ul class="site-list footer__nav">
                     <li><a class="site-list__link" href="#history">История</a></li>
                     <li><a class="site-list__link" href="#advantages">Производство</a></li>
@@ -249,14 +242,18 @@
             <div class="footer__wrapper">
                 <div class="footer__social"><a class="icon-button icon-button--insta" href="#">Инстаграм</a><a
                         class="icon-button icon-button--fb" href="#">Фейсбук</a><a class="icon-button icon-button--vk"
-                        href="#">Вконтакте</a></div>
+                                                                                   href="#">Вконтакте</a></div>
                 <p class="footer__copyright">При перепечатке материалов ссылка на сайт обязательна!</p>
                 <div class="footer__dev"><a class="icon-button" href="https://htmlacademy.ru/courses/345"><img
-                            src="img/htmlacademy.png" alt="HTML Academy Logo" width="27" height="34" /></a><b
+                        src="img/htmlacademy.png" alt="HTML Academy Logo" width="27" height="34"/></a><b
                         class="footer__dev-label">Разработчик: </b><a href="#">HTML Academy</a></div>
             </div>
         </div>
     </footer>
-</body>
+</template>
 
-</html>
+<script>
+</script>
+
+<style>
+</style>

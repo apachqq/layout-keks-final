@@ -50,13 +50,6 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            offer: {
-                type: Object
-            }
-        },
-    }
 </script>
 
 <style scoped>

@@ -472,7 +472,7 @@ input:not([type=checkbox]):active, input:not([type=checkbox]):focus, textarea:ac
     height: 67px
 }
 
-.assortment__new-tag {
+.assortment__new {
     top: -0.8em;
     display: inline-flex;
     justify-content: center;

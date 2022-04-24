@@ -46,7 +46,8 @@ export const assortment = [
         alcohol: '1.2%',
         calorie: 33,
         size: '330 МЛ',
-        price: '120 Р.'
+        price: '120 Р.',
+        new: false
     },
     {
         id: 2,
@@ -54,7 +55,8 @@ export const assortment = [
         alcohol: '1.2%',
         calorie: 45,
         size: '330 МЛ',
-        price: '250 Р.'
+        price: '250 Р.',
+        new: false
     },
     {
         id: 3,
@@ -62,7 +64,9 @@ export const assortment = [
         alcohol: '1%',
         calorie: 35,
         size: '0.5 Л',
-        price: '150 Р.'
+        price: '150 Р.',
+        new: true,
+        newValue: 'Новинка'
     },
     {
         id: 4,
@@ -70,6 +74,8 @@ export const assortment = [
         alcohol: '0.5%',
         calorie: 27,
         size: '0.5 Л',
-        price: '90 Р.'
+        price: '90 Р.',
+        new: true,
+        newValue: 'Новинка'
     }
 ]

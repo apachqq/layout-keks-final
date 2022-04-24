@@ -9,7 +9,7 @@
 
     <press-about-us></press-about-us>
 
-    <the-assortment></the-assortment>
+    <the-assortment :assortment="assortment"></the-assortment>
 
     <order-form></order-form>
 
@@ -29,12 +29,14 @@
 
     import { offers } from '@/mocks/mocks'
     import { advantageText } from '@/mocks/mocks'
+    import { assortment } from '@/mocks/mocks'
 
     export default {
         data() {
             return {
                 offers: offers,
-                advantageText: advantageText
+                advantageText: advantageText,
+                assortment: assortment
             }
         },
         components: {TheHeader, OfferList, TheFooter, AboutUs, HistoryOfKvass, PressAboutUs, TheAssortment, OrderForm}

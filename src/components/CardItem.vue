@@ -17,8 +17,8 @@
         <img class="kvast__pic" :src="offer.picture" alt="Кваст «Вахтёр»" wigth="319"
              height="459"/>
         <p class="kvast__description">{{ offer.description }}</p>
-        <p class="kvast__action"><a class="button button--ghost" href="#">Подробнее</a> <a
-                class="button button--primary" href="#">Купить</a> <b class="kvast__price">{{ offer.price }} Р.</b></p>
+        <p class="kvast__action"><a class="button button--ghost" href="#history">Подробнее</a> <a
+                class="button button--primary" href="#order">Купить</a> <b class="kvast__price">{{ offer.price }} Р.</b></p>
     </article>
 </template>
 

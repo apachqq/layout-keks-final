@@ -3,7 +3,7 @@
 
     <offer-list :offers="offers"></offer-list>
 
-    <about-us></about-us>
+    <about-us :advantageText="advantageText"></about-us>
 
     <history-of-kvass></history-of-kvass>
 
@@ -27,12 +27,14 @@
     import OrderForm from '@/components/OrderForm'
     import TheFooter from '@/components/TheFooter'
 
-    import { offers } from '@/mocks/offers'
+    import { offers } from '@/mocks/mocks'
+    import { advantageText } from '@/mocks/mocks'
 
     export default {
         data() {
             return {
-                offers: offers
+                offers: offers,
+                advantageText: advantageText
             }
         },
         components: {TheHeader, OfferList, TheFooter, AboutUs, HistoryOfKvass, PressAboutUs, TheAssortment, OrderForm}

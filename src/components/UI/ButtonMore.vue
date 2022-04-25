@@ -1,8 +1,16 @@
 <template>
-    <a class="button button--ghost" href="#history">Подробнее</a> 
+    <a class="button" :class="{button__ghost: value === 'Подробнее'}" :href="link">{{ value }}</a> 
 </template>
 
 <script>
+    export default {
+        data () {
+            return {
+                value: 'Подробнее',
+                link: '#history'
+            }
+        }
+    }
 </script>
 
 <style scoped>

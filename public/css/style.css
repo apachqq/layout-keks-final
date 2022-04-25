@@ -85,35 +85,35 @@ input:not([type=checkbox]):active, input:not([type=checkbox]):focus, textarea:ac
     padding: 11px 20px 15px
 }
 
-.button--primary {
+.button__primary {
     color: white;
     background-color: #834700;
     border: 2px solid #834700
 }
 
-.button--primary:hover {
+.button__primary:hover {
     color: white;
     background-color: #6a3900;
     border: 2px solid #6a3900
 }
 
-.button--primary:active, .button--primary:focus {
+.button__primary:active, .button__primary:focus {
     color: rgba(255, 255, 255, 0.5)
 }
 
-.button--ghost {
+.button__ghost {
     color: #834700;
     border: 2px solid #6a3900;
     background-color: transparent
 }
 
-.button--ghost:hover {
+.button__ghost:hover {
     background-color: transparent;
     color: #6a3900;
     border: 2px solid #6a3900
 }
 
-.button--ghost:active, .button--ghost:focus {
+.button__ghost:active, .button__ghost:focus {
     opacity: 0.5
 }
 

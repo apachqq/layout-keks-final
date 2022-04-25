@@ -43,7 +43,7 @@
                             class="custom-checkbox"></span> Я согласен получать квасную рассылку
                     </label>
                 </div>
-                <button class="button button--primary" type="submit">Отправить заказ</button>
+                <button class="button button__primary" type="submit">Отправить заказ</button>
             </form>
         </div>
     </section>

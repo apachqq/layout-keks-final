@@ -27,16 +27,14 @@
     import OrderForm from '@/components/OrderForm'
     import TheFooter from '@/components/TheFooter'
 
-    import { offers } from '@/mocks/mocks'
-    import { advantageText } from '@/mocks/mocks'
-    import { assortment } from '@/mocks/mocks'
+    import store from '@/store/store'
 
     export default {
         data() {
             return {
-                offers: offers,
-                advantageText: advantageText,
-                assortment: assortment
+                offers: store.state.offers,
+                advantageText: store.state.advantageText,
+                assortment: store.state.assortment
             }
         },
         components: {TheHeader, OfferList, TheFooter, AboutUs, HistoryOfKvass, PressAboutUs, TheAssortment, OrderForm}

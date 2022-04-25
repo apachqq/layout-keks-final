@@ -3,9 +3,9 @@
         <div class="container container--wide">
             <ul class="advantages__list">
                 <advantage-text-item
-                        v-for="text in advantageText"
-                        :key="text.id"
-                        :text="text"
+                        v-for="item in advantageText"
+                        :key="item.id"
+                        :item="item"
                 ></advantage-text-item>
             </ul>
         </div>

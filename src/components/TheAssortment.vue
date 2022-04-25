@@ -15,9 +15,9 @@
                 <tbody>
 
                 <assortment-item
-                        v-for="oneItem in assortment"
+                        v-for="item in assortment"
                         :key="assortment.id"
-                        :oneItem="oneItem"
+                        :item="item"
                 ></assortment-item>
 
                 </tbody>

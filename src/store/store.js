@@ -82,6 +82,29 @@ export default createStore({
                 new: true,
                 newValue: 'Новинка'
             }
+        ],
+
+        dynamicLinks: [
+            {
+                id: 1,
+                href: '#history',
+                name: 'История'
+            },
+            {
+                id: 2,
+                href: '#advantages',
+                name: 'Производство'
+            },
+            {
+                id: 3,
+                href: '#assortment',
+                name: 'Ассортимент'
+            },
+            {
+                id: 4,
+                href: '#order',
+                name: 'Где купить'
+            }
         ]
     }
 })

@@ -1,5 +1,5 @@
 <template>
-    <the-header></the-header>
+    <the-header :dynamicLinks="dynamicLinks"></the-header>
 
     <offer-list :offers="offers"></offer-list>
 
@@ -13,7 +13,7 @@
 
     <order-form></order-form>
 
-    <the-footer></the-footer>
+    <the-footer :dynamicLinks="dynamicLinks"></the-footer>
 
 </template>
 
@@ -34,7 +34,8 @@
             return {
                 offers: store.state.offers,
                 advantageText: store.state.advantageText,
-                assortment: store.state.assortment
+                assortment: store.state.assortment,
+                dynamicLinks: store.state.dynamicLinks
             }
         },
         components: {TheHeader, OfferList, TheFooter, AboutUs, HistoryOfKvass, PressAboutUs, TheAssortment, OrderForm}

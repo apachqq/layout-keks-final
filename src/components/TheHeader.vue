@@ -4,10 +4,11 @@
             <nav class="main-nav"><a href="#top"><img src="img/logo.png" alt="Квас «Кваст» логотип" width="140"
                                                       height="76"/></a>
                 <ul class="site-list">
-                    <li><a class="site-list__link" href="#history">История</a></li>
-                    <li><a class="site-list__link" href="#advantages">Производство</a></li>
-                    <li><a class="site-list__link" href="#assortment">Ассортимент</a></li>
-                    <li><a class="site-list__link" href="#order">Где купить</a></li>
+                    <dynamic-links
+                            v-for="link in dynamicLinks"
+                            :key="link.id"
+                            :link="link"
+                    ></dynamic-links>
                 </ul>
             </nav>
             <p class="page-header__slogan">Крафтовый квас <br> всему голова!</p>
@@ -16,6 +17,21 @@
 </template>
 
 <script>
+    import DynamicLinks from '@/components/DynamicLinks'
+
+    export default {
+        data () {
+            return {
+
+            }
+        },
+        props: {
+            dynamicLinks: {
+                type: Array
+            }
+        },
+        components: {DynamicLinks}
+    }
 </script>
 
 <style scoped>

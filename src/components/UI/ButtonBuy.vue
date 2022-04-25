@@ -1,5 +1,7 @@
 <template>
-    <a class="button" :class="{button__primary: value === 'Купить'}" :href="link">{{ value }}</a>
+    <a class="button"
+       :class="{button__primary: value === 'Купить' && link === '#order'}"
+       :href="link">{{ value }}</a>
 </template>
 
 <script>

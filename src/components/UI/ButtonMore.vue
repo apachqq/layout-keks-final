@@ -1,5 +1,7 @@
 <template>
-    <a class="button" :class="{button__ghost: value === 'Подробнее'}" :href="link">{{ value }}</a> 
+    <a class="button"
+       :class="{button__ghost: value === 'Подробнее' && link === '#history'}"
+       :href="link">{{ value }}</a> 
 </template>
 
 <script>

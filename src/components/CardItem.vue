@@ -20,7 +20,9 @@
         <p class="kvast__action">
 
             <button-more></button-more>
+
             <button-buy></button-buy>
+
             <b class="kvast__price">{{ offer.price }} Р.</b>
         </p>
     </article>
@@ -30,7 +32,14 @@
     import ButtonMore from '@/components/UI/ButtonMore'
     import ButtonBuy from '@/components/UI/ButtonBuy'
 
+    import store from '@/store/store'
+
     export default {
+        data () {
+            return {
+                buttonsValues: store.state.buttonsValues
+            }
+        },
         props: {
             offer: {
                 type: Object

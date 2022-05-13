@@ -6,6 +6,7 @@
 
 <script>
     export default {
+        name: 'button-more',
         data () {
             return {
                 value: 'Подробнее',

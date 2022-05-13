@@ -6,7 +6,8 @@
 
 <script>
     export default {
-        data () {
+        name: 'button-buy',
+        data() {
             return {
                 value: 'Купить',
                 link: '#order'

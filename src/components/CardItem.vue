@@ -29,9 +29,6 @@
 </template>
 
 <script>
-    import ButtonMore from '@/components/UI/ButtonMore'
-    import ButtonBuy from '@/components/UI/ButtonBuy'
-
     import store from '@/store/store'
 
     export default {
@@ -44,8 +41,7 @@
             offer: {
                 type: Object
             }
-        },
-        components: {ButtonMore, ButtonBuy}
+        }
     }
 </script>
 

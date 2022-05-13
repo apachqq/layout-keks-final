@@ -9,12 +9,10 @@
 </template>
 
 <script>
+    import AssortmentItemMixin from '@/mixins/AssortmentItemMixin'
+
     export default {
-        props: {
-            item: {
-                type: Object
-            }
-        }
+        mixins: [AssortmentItemMixin]
     }
 </script>
 

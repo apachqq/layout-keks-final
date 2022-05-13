@@ -8,12 +8,10 @@
 </template>
 
 <script>
+    import AdvantageTextItemMixin from '@/mixins/AdvantageTextItemMixin'
+
     export default {
-        props: {
-            item: {
-                type: Object
-            }
-        }
+        mixins: [AdvantageTextItemMixin]
     }
 </script>
 

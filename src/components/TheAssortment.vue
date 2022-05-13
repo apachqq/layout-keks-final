@@ -28,13 +28,10 @@
 
 <script>
     import AssortmentItem from '@/components/AssortmentItem'
+    import TheAssortmentMixin from '@/mixins/TheAssortmentMixin'
 
     export default {
-        props: {
-            assortment: {
-                type: Array
-            }
-        },
+        mixins: [TheAssortmentMixin],
         components: {AssortmentItem}
     }
 </script>

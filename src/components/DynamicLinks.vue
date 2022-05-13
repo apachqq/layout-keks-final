@@ -3,12 +3,10 @@
 </template>
 
 <script>
+    import DynamicLinksMixin from '@/mixins/DynamicLinksMixin'
+
     export default {
-        props: {
-            link: {
-                type: Object
-            }
-        }
+        mixins: [DynamicLinksMixin]
     }
 </script>
 

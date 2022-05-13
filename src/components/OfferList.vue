@@ -15,13 +15,10 @@
 
 <script>
     import CardItem from '@/components/CardItem'
+    import OfferListMixin from '@/mixins/OfferListMixin'
 
     export default {
-        props: {
-            offers: {
-                type: Array
-            }
-        },
+        mixins: [OfferListMixin],
         components: {CardItem}
     }
 </script>

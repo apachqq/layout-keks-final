@@ -14,13 +14,10 @@
 
 <script>
     import AdvantageTextItem from '@/components/AdvantageTextItem'
+    import AboutUsMixin from '@/mixins/AboutUsMixin'
 
     export default {
-        props: {
-            advantageText: {
-                type: Array
-            }
-        },
+        mixins: [AboutUsMixin],
         components: {AdvantageTextItem}
     }
 </script>

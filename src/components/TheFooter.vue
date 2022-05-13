@@ -27,18 +27,10 @@
 
 <script>
     import DynamicLinks from '@/components/DynamicLinks'
+    import TheFooterMixin from '@/mixins/TheFooterMixin'
 
     export default {
-        data () {
-            return {
-
-            }
-        },
-        props: {
-            dynamicLinks: {
-                type: Array
-            }
-        },
+        mixins: [TheFooterMixin],
         components: {DynamicLinks}
     }
 </script>

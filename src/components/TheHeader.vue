@@ -18,18 +18,10 @@
 
 <script>
     import DynamicLinks from '@/components/DynamicLinks'
+    import TheHeaderMixin from '@/mixins/TheHeaderMixin'
 
     export default {
-        data () {
-            return {
-
-            }
-        },
-        props: {
-            dynamicLinks: {
-                type: Array
-            }
-        },
+        mixins: [TheHeaderMixin],
         components: {DynamicLinks}
     }
 </script>

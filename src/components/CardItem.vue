@@ -29,19 +29,10 @@
 </template>
 
 <script>
-    import store from '@/store/store'
+    import CardItemMixin from '@/mixins/CardItemMixin'
 
     export default {
-        data () {
-            return {
-                buttonsValues: store.state.buttonsValues
-            }
-        },
-        props: {
-            offer: {
-                type: Object
-            }
-        }
+        mixins: [CardItemMixin]
     }
 </script>
 

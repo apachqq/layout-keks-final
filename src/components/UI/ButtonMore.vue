@@ -5,14 +5,11 @@
 </template>
 
 <script>
+    import ButtonMoreMixin from '@/mixins/ButtonMoreMixin'
+
     export default {
         name: 'button-more',
-        data () {
-            return {
-                value: 'Подробнее',
-                link: '#history'
-            }
-        }
+        mixins: [ButtonMoreMixin]
     }
 </script>
 

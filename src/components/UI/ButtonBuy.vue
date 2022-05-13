@@ -5,14 +5,11 @@
 </template>
 
 <script>
+    import ButtonBuyMixin from '@/mixins/ButtonBuyMixin'
+
     export default {
         name: 'button-buy',
-        data() {
-            return {
-                value: 'Купить',
-                link: '#order'
-            }
-        }
+        mixins: [ButtonBuyMixin]
     }
 </script>
 
